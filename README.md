@@ -1,4 +1,4 @@
-#gnuplotlatex
+# gnuplotlatex
 
  Esta é uma biblioteca em progresso com o
 intuito de facilitar a comunicação com o
@@ -21,7 +21,7 @@ como tabela do LaTeX está operante, enquanto
 a comunicação com o gnuplot está sendo
 esquematizada para futura implementação.
 
-##Tabelas LaTeX
+## Tabelas LaTeX
 
  Esta parte da biblioteca tem sua implementação
 centrada em uma estrutura que guarda as
@@ -40,7 +40,7 @@ ou depois da mesma)
  -Ponteiro para o texto que deve ser adicionado
 junto com a numeração da tabela
 
-###Funções da saída para o LaTeX
+### Funções da saída para o LaTeX
 
  - inicializa(const char\*, uint8\_t, uint8\_t, const char\*)
   Inicializa a estrutura com as configurações especificadas
