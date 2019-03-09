@@ -28,17 +28,22 @@ centrada em uma estrutura que guarda as
 informações que são necessárias durante ou após
 a construção da tabela, são elas:
 
- -Estilo das linhas horizontais (possibilidade
-de a primeira e última serem mais fortes que
-as demais)
- -Número de colunas
- -Número de linhas já escritas
- -Ponteiro para o arquivo onde está sendo
-escrita a tabela
- -Posicionamento da numeração da tabela (antes
-ou depois da mesma)
- -Ponteiro para o texto que deve ser adicionado
-junto com a numeração da tabela
+ - Estilo das linhas horizontais (possibilidade
+ de a primeira e última serem mais fortes que
+ as demais)
+
+ - Número de colunas
+
+ - Número de linhas já escritas
+
+ - Ponteiro para o arquivo onde está sendo
+ escrita a tabela
+
+ - Posicionamento da numeração da tabela (antes
+ ou depois da mesma)
+
+ - Ponteiro para o texto que deve ser adicionado
+ junto com a numeração da tabela
 
 ### Funções da saída para o LaTeX
 
