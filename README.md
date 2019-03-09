@@ -48,23 +48,23 @@ a construção da tabela, são elas:
 ### Funções da saída para o LaTeX
 
  - inicializa(const char\*, uint8\_t, uint8\_t, const char\*)
-  Inicializa a estrutura com as configurações especificadas
+ > Inicializa a estrutura com as configurações especificadas
   além de abrir e inicializar o arquivo, abrindo a tabela,
   centralizando, além de colocar o título, caso seja
   especificado nas configurações.
 
  - nome\_colunas(tabela\_tex, ...)
-  Coloca as strings na sequência como nomes das colunas até
+ > Coloca as strings na sequência como nomes das colunas até
   que o número de colunas seja atingido e coloca uma linha
   horizontal em seguida.
 
  - printoneline(tabela\_tex, char\*, ...)
-  A função printa uma linha da tabela conforme especificado
+ > A função printa uma linha da tabela conforme especificado
   na string de formato, enquanto faz a separação entre as
   colunas pelos espaço ou tabulações presentes na string.
 
  - fechatabela(tabela\_tex, const char\*, const char\*)
-  Fecha a tabela colocando as notas de rodapé, o label
+ > Fecha a tabela colocando as notas de rodapé, o label
   da tabela e o end{table}, além de fechar o arquivo.
   Caso não se queira um label ou notas de rodapé deve-se
   apenas enviar strings vazias nos respectivos argumentos.
