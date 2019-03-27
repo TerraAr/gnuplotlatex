@@ -20,7 +20,7 @@ if(!inicia.caption_pos){			//título na tabela
 fputs(caption,inicia.arq_tabela);
 fputs(capt,inicia.arq_tabela);
 fputs("}\n",inicia.arq_tabela);
-}
+}else fputs(capt,inicia.arq_tabela);
 
 fputs(inicio_all,inicia.arq_tabela);
 if(opcoes & COM_LINHAS_VERT){			//colocar linhas verticais entre as colunas?
