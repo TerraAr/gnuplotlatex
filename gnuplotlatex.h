@@ -63,6 +63,7 @@ void nome_colunas(tabela_tex tabela, ...);
 //void printline(tabela_tex tabela, char* tipos, ...);
 //void printline(tabela_tex tabela, char* tipos[], ...);
 void printoneline(tabela_tex *tabela, char *format, ...);
+void printoneline_v2(tabela_tex *tabela, ...);
 
 void fechatabela(tabela_tex tabela, const char *rodape, const char *label);
 

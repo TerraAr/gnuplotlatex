@@ -76,6 +76,22 @@ va_end(args);
 }
 
 
+
+void printoneline_v2(tabela_tex *tabela, ...){
+va_list args;
+va_start(args,tabela);
+
+fprintf((*tabela).arq_tabela,"\t\t%%Linha %hhu\n\t\t", ++(*tabela).linhas_printadas);
+for(uint8_t cont_col=0U;cont_col<(*tabela).num_col;){
+vfprintf((*tabela).arq_tabela, va_arg(args, char*), args);
+fputs(++cont_col<(*tabela).num_col ? "&\n\t\t" : "\\\\\n\n", (*tabela).arq_tabela);
+}
+
+va_end(args);
+}
+
+
+
 /*
 void printlines(tabela_tex *tabela, uint8_t num_linhas, ...){
 va_list args;
