@@ -48,7 +48,7 @@ a construção da tabela, são elas:
 ### Funções da saída para o LaTeX
 
  ~~~c
- tabela_tex inicializa(const char*, uint8_t, uint8_t, const char*)
+ tabela_tex inicializa(const char* nome_arq, uint8_t , uint8_t num_colunas, const char* capt)
  ~~~
 
   Inicializa a estrutura com as configurações especificadas
@@ -57,7 +57,7 @@ a construção da tabela, são elas:
   especificado nas configurações.  
 
  ~~~c
- void nome_colunas(tabela_tex, ...)
+ void nome_colunas(tabela_tex tabela, ...)
  ~~~
 
   Coloca as strings na sequência como nomes das colunas até
@@ -65,7 +65,7 @@ a construção da tabela, são elas:
   horizontal em seguida.  
 
  ~~~c
- void printoneline(tabela_tex, char*, ...)
+ void printoneline(tabela_tex *tabela, char *format, ...)
  ~~~
 
  A função printa uma linha da tabela conforme especificado
@@ -73,7 +73,7 @@ a construção da tabela, são elas:
  colunas pelos espaço ou tabulações presentes na string.  
 
  ~~~c
- void fechatabela(tabela_tex, const char*, const char*)
+ void fechatabela(tabela_tex tabela, const char *rodape, const char *label)
  ~~~
 
  Fecha a tabela colocando as notas de rodapé, o label
