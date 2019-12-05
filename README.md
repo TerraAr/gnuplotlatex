@@ -48,7 +48,7 @@ a construção da tabela, são elas:
 ### Funções da saída para o LaTeX
 
  ~~~c
- tabela_tex inicializa(const char* nome_arq, uint8_t , uint8_t num_colunas, const char* capt)
+ tabela_tex inicializa(const char *nome_arq, uint8_t num_colunas, uint8_t opcoes, const char *capt)
  ~~~
 
   Inicializa a estrutura com as configurações especificadas
