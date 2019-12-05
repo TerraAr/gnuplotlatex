@@ -13,7 +13,7 @@ que seja possível fazer essas comunicações
 simples, porém altamente configurável para os
 programadores que necessitem seguir normas
 específicas de formatação de tabelas e gráficos
-que não sejam necessariamente "amigáveis" com
+que não sejam necessariamente ``amigáveis'' com
 as da ABNT ou similares.  
 
  Atualmente apenas a parte de saída formatada
