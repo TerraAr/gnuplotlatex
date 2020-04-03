@@ -13,10 +13,10 @@ específicas de formatação de tabelas e gráficos
 que não sejam necessariamente ''amigáveis'' com
 as da ABNT ou similares.  
 
- Atualmente apenas a parte de saída formatada
-como tabela do LaTeX está operante, enquanto
-a comunicação com o gnuplot está sendo
-esquematizada para futura implementação.  
+A biblioteca foi feita para trabalhar com as
+classes `article` e `abntex2` do LaTeX. Não é
+garantida a sua funcionalidade com as demais
+classes.
 
 ## Tabelas LaTeX
 
