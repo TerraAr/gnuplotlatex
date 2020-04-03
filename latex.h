@@ -1,5 +1,5 @@
-#ifndef GNUPLOTLATEX_H
-#define GNUPLOTLATEX_H
+#ifndef LATEX_H
+#define LATEX_H
 
 #include<stdio.h>
 #include<stdarg.h>
@@ -67,4 +67,4 @@ void printoneline_v2(tabela_tex *tabela, ...);
 
 void fechatabela(tabela_tex tabela, const char *rodape, const char *label);
 
-#endif /*GNUPLOTLATEX_H*/
+#endif /*LATEX_H*/
