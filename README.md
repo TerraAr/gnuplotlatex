@@ -1,12 +1,9 @@
-# gnuplotlatex
+# latex
 
  Esta é uma biblioteca em progresso com o
-intuito de facilitar a comunicação com o
-software gnuplot (pedir gráfico e ajuste
-de curva e receber os parâmetros calculados)
-e fazer a saída com formatação de tabela
-(ou talvez imagem para os gráficos numa
-versão futura) do LaTeX.  
+intuito de facilitar a exportação dos dados
+com formatação de tabela (e imagem para
+os gráficos numa versão futura) do LaTeX.  
 
  As comunicações estão sendo feitas de modo
 que seja possível fazer essas comunicações
@@ -29,18 +26,21 @@ informações que são necessárias durante ou após
 a construção da tabela, são elas:  
 
  - Estilo das linhas horizontais (possibilidade
- de a primeira e última serem mais fortes que
- as demais)  
+ de a primeira e última serem estilizadas)  
 
  - Número de colunas  
 
- - Número de linhas já escritas  
+ - Número de linhas já escritas
+ É usado para numerar as linhas da tabela na
+ forma comentada, facilitando eventuais
+ modificações desta ''à mão'', sem necessidade
+ de criar um novo programa em C para modificá-lo
 
  - Ponteiro para o arquivo onde está sendo
  escrita a tabela  
 
- - Posicionamento da numeração da tabela (antes
- ou depois da mesma)  
+ - Posicionamento do label da tabela (antes ou
+ depois da mesma)  
 
  - Ponteiro para o texto que deve ser adicionado
  junto com a numeração da tabela  
@@ -53,8 +53,8 @@ a construção da tabela, são elas:
 
   Inicializa a estrutura com as configurações especificadas
   além de abrir e inicializar o arquivo, abrindo a tabela,
-  centralizando, além de colocar o título, caso seja
-  especificado nas configurações.  
+  centralizando, e colocando o título, caso este seja no
+  cabeçalho.  
 
  ~~~c
  void nome_colunas(tabela_tex tabela, ...)
