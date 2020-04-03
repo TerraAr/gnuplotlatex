@@ -1,9 +1,8 @@
-#include"gnuplotlatex.h"
+#include"latex.h"
 #include<stdio.h>
 #include<stdarg.h>
 #include<stdbool.h>
 #include<stdint.h>
-#include<string.h>
 
 tabela_tex inicializa(const char *nome_arq, uint8_t num_colunas, uint8_t opcoes, const char *capt){
 tabela_tex inicia={NULL, num_colunas, 0U, opcoes & CAP_FIM, opcoes & LINHA_EST};
