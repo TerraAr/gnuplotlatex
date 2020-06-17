@@ -65,6 +65,7 @@ void nome_colunas(tabela_tex tabela, ...);
 void printoneline(tabela_tex *tabela, char *format, ...);
 void printoneline_v2(tabela_tex *tabela, ...);
 
-void fechatabela(tabela_tex tabela, const char *rodape, const char *label);
+inline void fechatabela(tabela_tex tabela, const char *rodape,
+			const char *label) __attribute__((always_inline));
 
 #endif /*LATEX_H*/
