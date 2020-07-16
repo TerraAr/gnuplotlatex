@@ -30,7 +30,7 @@ tabela, são elas:
 ### Funções da saída para o LaTeX
 
  ~~~c
- tabela\_tex inicializa(const char \*nome\_arq, uint8\_t num\_colunas, uint8\_t opcoes, const char \*capt)
+ tabela_tex inicializa(const char *nome_arq, uint8_t num_colunas, uint8_t opcoes, const char *capt)
  ~~~
 
   Inicializa a estrutura com as configurações especificadas além de abrir e
@@ -45,7 +45,7 @@ tabela, são elas:
   colunas seja atingido e coloca uma linha horizontal em seguida.  
 
  ~~~c
- void printoneline(tabela_tex \*tabela, char \*format, ...)
+ void printoneline(tabela_tex *tabela, char *format, ...)
  ~~~
 
  A função printa uma linha da tabela conforme especificado na string de
@@ -53,7 +53,7 @@ tabela, são elas:
  presentes na string.  
 
  ~~~c
- void fechatabela(tabela_tex tabela, const char \*rodape, const char \*label)
+ void fechatabela(tabela_tex tabela, const char *rodape, const char *label)
  ~~~
 
  Fecha a tabela colocando as notas de rodapé, o label da tabela e o
