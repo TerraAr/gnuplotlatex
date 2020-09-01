@@ -3,7 +3,6 @@
 
 #include<stdio.h>
 #include<stdarg.h>
-#include<stdbool.h>
 #include<stdint.h>
 
 #ifdef FORCE_POSITION
@@ -48,9 +47,9 @@ static const char *small="\t{\\small\n\t\t";
 
 #endif
 
-static const char *label_str="}\n\t\\label{";
+static const char *label_str="\t\\label{";
 
-static const char *fim_final="}\n\\end{table}\n";
+static const char *fim_final="\\end{table}\n";
 
 typedef struct tabela_tex{
 FILE *arq_tabela;		//ponteiro para o arquivo
@@ -67,12 +66,13 @@ tabela_tex inicializa(const char *nome_arq, uint8_t num_colunas,
 
 void nome_colunas(tabela_tex tabela, ...);
 
-//void printline(tabela_tex tabela, char* tipos, ...);
-//void printline(tabela_tex tabela, char* tipos[], ...);
 void printoneline(tabela_tex *tabela, char *format, ...);
 void printoneline_v2(tabela_tex *tabela, ...);
 
-inline void fechatabela(tabela_tex tabela, const char *rodape,
-			const char *label) __attribute__((always_inline));
+void printmultiline
+	(tabela_tex *tabela, const uint8_t qte_linhas, char *format, ...);
+void printmultiline_v2(tabela_tex *tabela, const uint8_t qte_linhas, ...);
+
+void fechatabela(tabela_tex tabela, const char *rodape, const char *label);
 
 #endif /*LATEX_H*/
