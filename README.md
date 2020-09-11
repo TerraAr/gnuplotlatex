@@ -14,15 +14,24 @@
  `abntex2` do LaTeX. Não é garantida a sua funcionalidade com as
  demais classes.  
 
+ O resultado final é a tabela em um arquivo LaTeX que pode ser
+ facilmente incluída no relatório ou trabalho com o simples
+ uso de um `\input{arquivo.tex}` para a inclusão sem quebra de página
+ ou um `\include{arquivo.tex}` para inclusão com quebra de página.
+
 ## Tabelas LaTeX
 
  Esta parte da biblioteca tem sua implementação centrada em uma
- estrutura que guarda as informações que são necessárias durante ou
- após a construção da tabela, são elas:  
+ estrutura que guarda as informações que são necessárias para a
+ construção de uma tabela em LaTeX legível ao usuário conhecedor da
+ linguagem, de forma que este possa facilmente modificar a tabela sem
+ necessidade de horas de análise ou modificação das *strings*
+ enviadas à biblioteca e reexecução do *software*, são elas:  
 
  - Número de colunas  
 
  - Número de linhas já escritas
+
  É usado para fazer a numeração das linhas da tabela na  forma de
  comentários, facilitando eventuais modificações desta "à mão", sem
  necessidade de modificar e reexecutar o programa para isso.
