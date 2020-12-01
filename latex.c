@@ -113,7 +113,7 @@ void printoneline(tabela_tex *tabela, char *format, ...){
 	for(i = 0U, cont_col = 0U, ini = 0U;
 	*(str_format + i) && cont_col < (*tabela).num_col;){
 		/* Acha o índice do final da célula */
-		while(!isspace(*(str_format+i)) || *(str_format+i)!='\0')
+		while(!isspace(*(str_format+i)) && *(str_format+i)!='\0')
 			i++;
 
 		/* Isola a célula para o vfprintf */
