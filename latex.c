@@ -99,7 +99,7 @@ void nome_colunas(tabela_tex tabela, ...){
 
 
 
-void printoneline(tabela_tex *tabela, char *format, ...){
+void printoneline(tabela_tex *tabela, const char *format, ...){
 	va_list args;
 	va_start(args, format);
 
@@ -149,7 +149,7 @@ void printoneline_v2(tabela_tex *tabela, ...){
 }
 
 void printmultiline(tabela_tex *tabela, const uint8_t qte_linhas,
-				char *format, ...){
+				const char *format, ...){
 	va_list args;
 	va_start(args, format);
 

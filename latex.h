@@ -99,11 +99,11 @@ tabela_tex inicializa(const char *nome_arq, uint8_t num_colunas,
 
 void nome_colunas(tabela_tex tabela, ...);
 
-void printoneline(tabela_tex *tabela, char *format, ...);
+void printoneline(tabela_tex *tabela, const char *format, ...);
 void printoneline_v2(tabela_tex *tabela, ...);
 
 void printmultiline
-	(tabela_tex *tabela, const uint8_t qte_linhas, char *format, ...);
+	(tabela_tex *tabela, const uint8_t qte_linhas, const char *format, ...);
 void printmultiline_v2(tabela_tex *tabela, const uint8_t qte_linhas, ...);
 
 void fechatabela(tabela_tex tabela, const char *rodape, const char *label);
