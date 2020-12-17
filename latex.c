@@ -103,7 +103,7 @@ void printoneline(tabela_tex *tabela, const char *format, ...){
 	va_list args;
 	va_start(args, format);
 
-	char str_format[strlen(format)];
+	char str_format[strlen(format) + 1];
 	strcpy(str_format, format);
 
 	fprintf( (*tabela).arq_tabela, "\t\t%%Linha %hhu\n\t\t",
